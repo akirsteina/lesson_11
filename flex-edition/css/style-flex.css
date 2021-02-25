@@ -5,7 +5,7 @@ body {
 
 h1,
 h2 {
-    color: grey;
+    color: rgb(75, 63, 63);
 }
 
 h1 {
@@ -20,7 +20,6 @@ h2 {
     line-height: 30px;
     padding-left: 0px;
     cursor: pointer;
-    /* overflow: hidden; */
 }
 
 li {
@@ -33,38 +32,51 @@ li:last-of-type {
     border-bottom: 1px solid lightgray;
 }
 
-.left-side {
-    display: inline-block;
+
+/* This is the part that's different */
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-.white:hover,
-.grey:hover {
-    background-color: rgb(27, 27, 27);
+
+/* End of the part that's different */
+
+.odd {
+    background-color: white;
+}
+
+.even {
+    background-color: rgb(231, 250, 224);
+}
+
+.even:hover,
+.odd:hover {
+    background-color: rgb(56, 56, 56);
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(197, 178, 178);
+}
+
 .right-side {
-    float: right;
-    background-color: red;
+    background-color: rgb(4, 75, 4);
+    line-height: 30px;
     width: 30px;
     text-align: center;
-    /* display: inline-block; */
 }
 
 .right-side:hover {
     background-color: rgb(136, 134, 134);
-}
-
-.white {
-    background-color: white;
-}
-
-.grey {
-    background-color: rgb(250, 224, 224);
+    text-decoration: underline;
 }
 
 form {
-    background-color: rgb(245, 188, 216);
+    background-color: rgb(188, 245, 207);
     padding: 10px 20px 30px 25px;
 }
 
@@ -72,8 +84,8 @@ button {
     margin-top: 30px;
     border: grey 1px solid;
     border-radius: 10px;
-    background-color: indianred;
-    color: indigo;
+    background-color: rgb(6, 163, 85);
+    color: rgb(24, 66, 0);
     padding-top: 5px;
     padding-left: 50px;
     padding-right: 50px;

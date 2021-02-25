@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS stuff</title>
+    <link rel="stylesheet" href="css/style-flex.css">
+</head>
+
+
+<body>
+    <div>
+        <h1>Today's tasks</h1>
+    </div>
+    <div>
+        <ul class="checkbox-list">
+            <li class="container odd">
+
+                <div>
+                    <input type="checkbox" id="milk-checkbock" name="milk" value="1" checked>
+                    <label for="milk-checkbock">Buy milk</label>
+                </div>
+                <div class="right-side">
+                    <a href="">X</a>
+
+                </div>
+            </li>
+
+            <li class="container even">
+
+                <div>
+                    <input type="checkbox" id="html-checkbock" name="html" value="2" checked>
+                    <label for="html-checkbock">Learn HTML</label>
+                </div>
+                <div class="right-side">
+                    <a href="">X</a>
+                </div>
+
+            </li>
+            <li class="container odd">
+                <div>
+                    <input type="checkbox" id="css-checkbock" name="css" value="3">
+                    <label for="css-checkbock">Write some amazing CSS</label>
+                </div>
+                <div class="right-side">
+                    <a href="">X</a>
+                </div>
+            </li>
+            <li class="container even">
+                <div>
+                    <input type="checkbox" id="awesome-checkbock" name="awesome" value="4" checked>
+                    <label for="awesome-checkbock">Be awesome</label>
+                </div>
+                <div class="right-side">
+                    <a href="">X</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <form action="" method="POST">
+        <div class="form-new-task">
+            <h2>Add new task</h2>
+            <label for="task-input-field">New task: </label>
+            <input type="text" id="task-input-field" value="Add some task" name="task">
+        </div>
+        <div>
+            <button type="submit">Add</button>
+        </div>
+    </form>
+</body>
+
+</html>
