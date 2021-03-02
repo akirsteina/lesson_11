@@ -14,6 +14,7 @@
         <h1>Today's tasks</h1>
     </div>
     <div>
+        <!-- class-list-wrapper -->
         <ul class="checkbox-list">
             <li class="odd">
 
@@ -28,8 +29,9 @@
             </li>
 
             <li class="even">
-
+                <!-- checkbox-list-item -->
                 <div class="left-side">
+                    <!-- list-item-left-side -->
                     <input type="checkbox" id="html-checkbock" name="html" value="2" checked>
                     <label for="html-checkbock">Learn HTML</label>
                 </div>
@@ -57,18 +59,20 @@
                 </div>
             </li>
         </ul>
+        <!-- .checkbox-list -->
     </div>
-
-    <form action="" method="POST">
-        <div class="form-new-task">
-            <h2>Add new task</h2>
-            <label for="task-input-field">New task: </label>
-            <input type="text" id="task-input-field" placeholder="Add some task" name="task">
-        </div>
-        <div>
-            <button type="submit">Add</button>
-        </div>
-    </form>
+    <div class="form-new-task-wrapper">
+        <form action="" method="POST">
+            <div class="form-new-task">
+                <h2>Add new task</h2>
+                <label for="task-input-field">New task: </label>
+                <input type="text" id="task-input-field" placeholder="Add some task" name="task">
+            </div>
+            <div>
+                <button type="submit">Add</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
